@@ -101,7 +101,7 @@
 
         2. **Query Processing**:
             - For each query, we iterate through the range `[left, right]` and count how many `True` values exist in the `if_Vowel_String` list within that range. The time complexity for each query is **$O(k)$**, where $k$ is the length of the query range (`right - left + 1`).
-            - If there are `m` queries, the total time complexity for answering all queries is **$O(m \times k)$**, where $m$ is the number of queries and $k$ is the average query range length.
+            - If there are $m$ queries, the total time complexity for answering all queries is **$O(m \times k)$**, where $m$ is the number of queries and $k$ is the average query range length.
 
     - ### Space Complexity
         1. **`if_Vowel_String` List**:
@@ -110,4 +110,4 @@
         2. **Result List**:
             - We store the result for each query in a list, which requires **$O(m)$** space, where $m$ is the number of queries.
 
-            Thus, the total space complexity is **$O(n+m)$**, where `n` is the number of words and $m$ is the number of queries.
+            Thus, the total space complexity is **$O(n+m)$**, where $n$ is the number of words and $m$ is the number of queries.
